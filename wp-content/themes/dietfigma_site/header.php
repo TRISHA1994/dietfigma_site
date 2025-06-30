@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light btm-nav navbar-scroll">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="./images/logo.png" alt="" width="150">
+            <img src="http://localhost/dietfigma_site/wp-content/uploads/2025/06/logo.png" alt="" width="150">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -160,11 +160,11 @@ ul.navbar-nav .nav-item{
     }
 }
 @media(max-width:767px){
-        .cart {
+        /* .cart {
         position: absolute;
         left: 55%;
         top: 10px;
-    }
+    } */
      .hero-section .hero-content h2.title{
         font-size:20px;
         line-height:30px;
@@ -184,7 +184,45 @@ ul.navbar-nav .nav-item{
     .abt_img{
         margin: 20px 0;
     }
+    .others_product {
+        margin: 50px 0 !important;
+    }
+
+    ul.tabs.wc-tabs {
+        display: none;
+    }
+
+    .woocommerce-tabs.wc-tabs-wrapper {
+        float:none !important;
+        max-width: 100% !important;
+        position: static !important;
     
+    }
+
+    div#tab-description h2 {
+        display: none;
+    }
+    .product_meta span.posted_in {
+        display: none;
+    }
+    .woocommerce-product-gallery__image {
+        max-width: 386px;
+        border: 1px solid #56AA46;
+        border-radius: 10px;
+        margin:0 auto;
+    } 
+    .post-content .p_title {
+    position: static;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.summary.entry-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
 }
 @media(max-width:576px){
         
@@ -1111,4 +1149,72 @@ section.checkout h2 {
 }
 .form-grid img {
     max-width: 80%;
+}
+section.shop_prod img {
+    max-width: 115px;
+    height: 232px;
+    object-fit: cover;
+}
+
+section.shop_prod .shop_img {
+    padding: 40px;
+}
+.woocommerce-product-gallery__image {
+    max-width: 386px;
+    border: 1px solid #56AA46;
+    border-radius: 10px;
+   
+}
+
+a.woocommerce-product-gallery__trigger {
+    display: none;
+}
+section.related.products {
+    display: none;
+}
+.p_title{
+        position: relative;
+    top: 40px;
+    left: 10px;
+}
+.p_details .summary{
+        position: relative;
+    top: 50px;
+}
+.others_product {
+    margin: 100px 0;
+}
+
+ul.tabs.wc-tabs {
+    display: none;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+    float: right;
+    max-width: 50%;
+    position: absolute;
+    left: 52%;
+    top: 220px;
+}
+
+div#tab-description h2 {
+    display: none;
+}
+.product_meta span.posted_in {
+    display: none;
+}
+button.single_add_to_cart_button.button.alt {
+    background: #56AA46;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+p.price .amount {
+    font-size: 30px;
+    font-weight: bold;
 }

@@ -31,16 +31,10 @@ get_header();
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6"><h1 class="post-title"><?php the_title(); ?></h1></div>
-    </div>
-
-      
-
-
       <div class="post-content">
-        <?php the_content(); ?>
+        <div class="row p_title"><div class="offset-lg-6 col-lg-6"><h1 class="post-title"><?php the_title(); ?></h1></div></div>
+        <div class="row p_details"><?php the_content(); ?></div>
+        
       </div>
     </article>
 

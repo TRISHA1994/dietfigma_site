@@ -205,6 +205,10 @@ ul.navbar-nav .nav-item{
     .product_meta span.posted_in {
         display: none;
     }
+    .product img.wp-post-image {
+    height: 413px !important;
+    object-fit: contain;
+}
     .woocommerce-product-gallery__image {
         max-width: 386px;
         border: 1px solid #56AA46;
@@ -1129,7 +1133,9 @@ textarea {
 }
 
 .checkout-btn:hover {
-  background: #3e9640;
+  background: white ;
+  color:#3e9640;
+  border:1px solid #3e9640
 }
 
 .payment-icons img {
@@ -1213,8 +1219,63 @@ button.single_add_to_cart_button.button.alt {
     max-width: 200px;
     margin: 0 auto;
 }
+button.single_add_to_cart_button.button.alt:hover{
+    background-color:#fff;
+    color:#56AA46;
+    border: 1px solid #56AA46;
+}
 
 p.price .amount {
     font-size: 30px;
     font-weight: bold;
+}
+ .product img.wp-post-image {
+    height: 413px !important;
+    object-fit: contain;
+}
+h1.post-title {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+h1.post-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 6px;
+    background-color: #56AA46;
+}
+.product-slider.slick-initialized.slick-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+    height: 30px;
+    width: 50%;
+    background: transparent;
+    border: none;
+    color:white;
+}
+button.slick-next.slick-arrow:after {
+    content: ">";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    background: black;
+    padding: 0px 5px;
+    border-radius: 50%;
+}
+button.slick-prev.slick-arrow:before {
+    content: "<";
+    color: white !important;
+    font-size: 16px;
+    position: absolute;
+    background: black;
+    padding: 0px 5px;
+    border-radius: 50%;
 }
